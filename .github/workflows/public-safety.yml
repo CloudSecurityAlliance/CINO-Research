@@ -1,0 +1,30 @@
+name: public-safety
+# Structural check only: catches patterns, not meaning. See CLAUDE.md rule 2.
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan for private links, credentials, and personal data
+        run: |
+          set -u
+          fail=0
+          check () {  # $1 = label, $2 = PCRE pattern
+            if grep -rnIP --exclude-dir=.git --exclude-dir=.github --exclude=LICENSE -e "$2" . ; then
+              echo "::error::public-safety: $1"; fail=1
+            fi
+          }
+          check "link to a private CSA organization" 'CloudSecurityAlliance-Internal'
+          check "GitHub token"      '\b(ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}'
+          check "AWS access key"    '\bAKIA[0-9A-Z]{16}\b'
+          check "Slack token"       '\bxox[abposr]-[A-Za-z0-9-]{10,}'
+          check "API secret key"    '\bsk-[A-Za-z0-9_-]{20,}'
+          check "Airtable token"    '\bpat[A-Za-z0-9]{14}\.[A-Za-z0-9]{20,}'
+          check "Airtable record/base/table id" '\b(app|rec|tbl)(?=[A-Za-z0-9]{14}\b)(?=[A-Za-z0-9]*[0-9])(?=[A-Za-z0-9]*[A-Z])[A-Za-z0-9]{14}\b'
+          check "private key"       '-----BEGIN [A-Z ]*PRIVATE KEY-----'
+          check "email address"     '\b[A-Za-z0-9._%+-]+@(?!example\.(com|org))[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}\b'
+          exit $fail
