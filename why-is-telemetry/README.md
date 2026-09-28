@@ -30,16 +30,19 @@ reasoning isn't enough. The expected outcome is what makes it something you can 
 | How the thinking changed, with decisions and rejected paths | [`CognitiveBOM.md`](CognitiveBOM.md) |
 | The source sweep: what held up, what was corrected, who else is working on this | [`11-source-sweep.md`](11-source-sweep.md), with raw evidence in [`sources/`](sources/) |
 | The first-person case (CSA's MCP server work) | [`14-mcp-case-material.md`](14-mcp-case-material.md) |
-| The column's structure and how it was built | [`10-story-beat-synthesis.md`](10-story-beat-synthesis.md), [`12-coverage-check.md`](12-coverage-check.md) |
 
-## What else is here
+## What's here, and what isn't
 
-The numbered files (`01`-`14`) are the working research packet, published as working papers. They
-show the process, including early positions that were later superseded. Where a numbered file
-disagrees with the KnowledgeBOM or CognitiveBOM, the BOMs are current.
+This folder holds what you need to **use** the idea and to **check** it:
+- the template;
+- the experiment log;
+- the two BOMs;
+- the source sweep and its raw evidence;
+- the first-person case material.
 
-The numbering has a gap at `13`, which was an internal example removed before publication.
-Column drafts are not included.
+The column's working papers (research sequence, design notes, drafts, and the numbered files the
+BOMs sometimes refer to, such as `04` or `10`) live in CSA's internal writing workspace and are
+not published here. Where the BOMs cite a numbered file that isn't in this folder, that is why.
 
 ## Status
 
