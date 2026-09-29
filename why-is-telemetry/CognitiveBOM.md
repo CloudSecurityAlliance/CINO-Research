@@ -453,6 +453,27 @@ The first-person material now comes from the public MCP server work (`14-mcp-cas
 
 **Expected outcome:** no reader flags an internal contradiction between Beats 5 and 8. **Check by:** 2026-11-15, against reader feedback.
 
+## C22 - Hope is not expectation (Kurt's read of draft-03)
+
+**Origin:** Kurt, 2026-09-28: "the hope and the expectation are different?"
+**Disposition:** `completed`
+
+**The insight:**
+- A **hope** (the goal) scored against the outcome measures whether you got what you wanted.
+- An **expectation** (the prediction) scored against the outcome measures whether your judgment was good.
+- The distance between them is the risk you knowingly accepted, and it is worth recording too.
+- This sharpens the thesis. Plans already record hopes. Almost nobody records the expectation.
+- It also connects to "goals decay in the direction that flatters": a hope passed off as an expectation.
+
+**Changes made in draft-04:**
+- Beat 7 gains the hope-vs-expectation distinction.
+- "a prediction you can score" becomes "a judgment you can check against what actually happened". Kurt suggested "an outcome you can score". Kept "judgment" instead, because you score the judgment *against* the outcome, and it echoes the protected line.
+- The H1 passages no longer say "leaked" and "the gap". They now say what the gap was (text hidden from human readers, a way to smuggle instructions to an AI) and what happened (the white text got through).
+- The close adds "(not what you hope)".
+- `TEMPLATE.md` (an original in CINO-Research) gains a "Hoped outcome" field before "Expected outcome".
+
+**Expected outcome:** readers can state the difference between a hope and an expectation after one read. At least one template user fills in both fields with different values. **Check by:** 2026-11-15.
+
 ## Decisions against ledger
 
 | Rejected idea | Disposition | Reason |
