@@ -273,7 +273,7 @@ is converging from many directions (context graphs, spec-driven development, ADR
 journals). The column's contribution is closing the loop at organizational scale. That is consistent with the packet's
 existing "do not overclaim novelty" decision.
 
-**A meta-observation on the packet itself:** this packet's `CognitiveBOM.md` records decisions,
+**(Superseded 2026-09-27: CognitiveBOM entries now carry expected outcomes and check-by dates, from C15 onward.)** **A meta-observation on the packet itself, as of 2026-09-24:** this packet's `CognitiveBOM.md` records decisions,
 rationale and supersessions, but **no expected outcome for any decision**. That is the same gap the
 sweep found in ADRs and PEPs. If Kurt wants to run the experiment on the column itself ("someone
 has to go first"), the cheapest version is to add `expected outcome` and `checked on` fields to
