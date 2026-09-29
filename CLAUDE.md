@@ -54,6 +54,11 @@ These are goals, not a template. Include what the topic needs.
 - `sources/`: evidence files.
 - Anything else the topic needs (templates, findings, datasets), named for what it is.
 
+## Open work
+
+[`TODO.md`](TODO.md) at the repo root indexes all open work, one line per item, alongside GitHub
+Issues. Keep it current when a topic's work starts, advances or finishes.
+
 ## Rules
 
 1. **Pull requests only.** Never commit directly to `main`.
