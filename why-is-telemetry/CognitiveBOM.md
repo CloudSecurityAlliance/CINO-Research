@@ -260,6 +260,8 @@ This must appear in the column for credibility.
 
 ## C14 - Current open items
 
+> **Resolved (noted 2026-09-29):** each item below was later decided. The opening hook, citations, BOM naming, the architecture example and the recursive-improvement phrasing are covered in C15-C24.
+
 **Origin:** latest synthesis  
 **Disposition:** `open`
 
@@ -308,7 +310,7 @@ to outcomes or records predictions. The expected-outcome ground is still unclaim
 ## C16 - Coverage check: this column is the culmination of 78 → 80 → 87 → 89
 
 **Origin:** coverage check, 2026-09-24 (`12-coverage-check.md`)
-**Disposition:** `open` (recommendations await Kurt)
+**Disposition:** `completed`: recommendations applied in drafts 01-06 (noted 2026-09-29)
 
 Findings:
 
@@ -386,7 +388,7 @@ The first-person material now comes from the public MCP server work (`14-mcp-cas
 - Column only. The close would ask readers to use a template we don't publish, and "going first" would happen nowhere visible.
 
 **Expected outcome:** at least one person outside CSA uses the template within 90 days of launch, and the first scoring day happens on time.
-**Check by:** 90 days after launch. First scoring day: 2026-12-15 (Kurt to adjust).
+**Check by:** 90 days after launch. First scoring day: 2026-12-15 (Kurt to adjust). **Superseded:** the first scoring date is 2026-11-15 (C19 deferral and C20).
 
 **Risk to watch:** Kurt's own insight that "goals decay in the direction that flatters". A living page that stops being scored becomes the stale document the column warns about, so scoring day needs a real reminder (calendar entry or scheduled agent), not good intentions.
 
@@ -514,6 +516,53 @@ style, and lists the recorded decisions not to reopen.
 
 **Expected outcome:** the external review finds no factual error that needs a structural change;
 fixes, if any, are sentence-level. **Check by:** when the external review comes back.
+
+## C25 - External adversarial review: disposition
+
+**Origin:** GPT-6 via Codex, 2026-09-28 (`15-review-report.md`). Disposition discussed with Kurt on 2026-09-29.
+**Disposition:** `completed`
+
+**Accepted and applied in draft-07:**
+- Outcome vs judgment: "over time; any single result can be luck".
+- Review vs reward of reasoning: "never reward the reasoning for sounding good".
+- The white-text reason was *incomplete*, not wrong.
+- Research proposals are acknowledged, and "could not find" is scoped.
+- The Army's review is a *plan* precedent; forecasting tournaments are the *expectation* precedent.
+- The close gains "change what I do next".
+- Smaller fixes: logic (not why) in the code; the stylesheet result is scoped to the path tested; *shared* controls; softened absolutes; "self-reported estimates".
+
+**Accepted and applied in the package:**
+- The public-safety removal (14).
+- The experiment-log provenance note and resolution rules.
+- The template: the minimum version first, plus evidence, resolver and "what changes next" fields.
+- Stale lines superseded (KnowledgeBOM A3, G3, I8, J4, A6; 04; 10; 11; C14; C16; C19).
+- I9 added, and the source-vs-claim standing rule.
+
+**Rejected alternatives:**
+- Adopting the review's suggested wording verbatim. The substance was taken; the wording was kept tighter to preserve the voice.
+- Restoring Karvetski. The review agreed it isn't needed.
+
+**Two process failures found while applying the fixes, both disclosed:** an edit script failed without anyone noticing, twice (#118 in this repo, and #9 in CINO-Research). Each time the commit or PR text claimed a change that had not happened. Both were caught by a follow-up check and corrected (#119; CINO-Research #10). Scripts now stop on the first failure.
+
+**Expected outcome:** a second pass by an external AI on `draft-07` finds no remaining claim that overstates its source. **Check by:** the next review, or delivery.
+
+## C26 - Disclose the errors publicly; make adversarial review part of the process
+
+**Origin:** Kurt, 2026-09-29 ("let's be transparent and honest... we caught it as part of the process... we need to update our column process and all writing to include the adversarial review")
+**Disposition:** `completed` for the disclosure; the process change is recorded in ADR-003.
+
+**Decisions:**
+- The column carries one short passage disclosing what the process caught.
+- CINO-Research carries a dated Corrections table and a public summary of the review.
+- The public-safety slip is disclosed, and git history is deliberately not rewritten, because it is the timestamp evidence.
+- A cross-model adversarial review becomes a required step before publishing any CINO-Writing piece (ADR-003).
+
+**Rejected alternatives:**
+- Fixing quietly. That would contradict the column's own thesis.
+- Rewriting public history. It would destroy the provenance the experiment log relies on.
+- Naming the reviewing model in the column. It is named in the public review summary instead.
+
+**Expected outcome:** readers and reviewers treat the disclosed corrections as a credibility gain, not a loss. No reader reports an error we had already found and failed to disclose. **Check by:** 2026-11-15.
 
 ## Decisions against ledger
 

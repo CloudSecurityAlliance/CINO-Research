@@ -24,10 +24,10 @@ This is the working knowledge bill of materials for the article and a possible L
 |---|---|---|---|---|---|
 | A1 | Traditional telemetry mostly records what happened: events, errors, state, actions, latency, resource use | `MINE` | Yes | Supported | OTel GenAI conventions, AICM LOG-07 and EU AI Act Art. 12 all record events rather than reasons (sweep 3) |
 | A2 | Agentic knowledge work makes intent, assumptions, evidence, alternatives, uncertainty, and expected outcomes operationally important | `MINE` | Yes | Widely shared | Foundation Capital's "context graphs" (Dec 2025), Oracle AER (arXiv:2603.21692), the CSA Agentic Trust Framework and OWASP ASI01 all say this (sweep 3). Do not claim it as new. |
-| A3 | "Why is telemetry" is the conceptual pivot | `MINE` | Yes | Close prior | Foundation Capital: "the 'why' becomes first-class data". The column must acknowledge this (see I1). |
+| A3 | "Why is telemetry" is the conceptual pivot | `MINE` | Yes | Close prior | Foundation Capital: "the 'why' becomes first-class data". The column must acknowledge this (see I1). **Superseded 2026-09-24 (C15):** Kurt decided not to cite Foundation Capital; the column tells the 55-year lineage instead. |
 | A4 | Once why becomes telemetry, judgment becomes data | `MINE` + `VERIFIED` | Yes | Strongly supported | Tetlock's forecasting tournaments (Mellers 2014), and the 2026 finding that LLM-scored rationales from 55k+ forecasts predict accuracy (Karvetski, Tetlock, Karger et al., arXiv:2606.30987) (sweep 2) |
 | A5 | Judgment as data enables comparison of expected outcomes with actual outcomes | `MINE` + `VERIFIED` | Yes | Supported; the most distinctive claim | US Army AAR (TC 25-20) and Tetlock close this loop for humans. Levitt & March (1988) found projected-vs-realized comparisons are routinely "ignored". No agent standard, tool or startup records the agent's own expected outcome (sweep 3, negative search). |
-| A6 | Logged rationale is not truth; capture it as structured claims and test them over time | `MINE` + `VERIFIED` | Yes | Strongly supported | Nisbett & Wilson 1977, choice blindness (Johansson 2005), Turpin 2023, Chen et al. 2025 (hint mentioned 25-39% of the time), Baker 2025, Fischhoff 1975, Lerner & Tetlock 1999 (sweep 4). OWASP ASI09 "Fake Explainability" is the security version. |
+| A6 | Logged rationale is not truth; capture it as structured claims and test them over time | `MINE` + `VERIFIED` | Yes | Strongly supported | Nisbett & Wilson 1977, choice blindness (Johansson 2005), Turpin 2023, Chen et al. 2025 (hint mentioned 25-39% of the time), Baker 2025, Fischhoff 1975, Lerner & Tetlock 1999 (sweep 4). OWASP ASI09 "Fake Explainability" is the security version. **Refined 2026-09-29:** one outcome can be luck, so judgment is assessed from patterns across records (the external review; Duke's "resulting"). |
 
 ## B. General-purpose technology history
 
@@ -90,7 +90,7 @@ This is the working knowledge bill of materials for the article and a possible L
 |---|---|---|---|---|---|
 | G1 | In Kurt's practice, iterating documented AI workflows often reaches a steadier state after roughly 3-6 iterations | `KURT` + `PARTIAL` | Low | Loosely consistent | Self-Refine (2023) and Nielsen (1993) show most gains in the first 3-5 rounds. Huang et al. (2023) show that without external feedback, self-correction can degrade. Keep this as a personal observation. |
 | G2 | Building a library first, with the MCP server as a thin adapter, is a good example of architecture requiring preserved rationale; "paid for that lesson four separate times" | `KURT` + `CORRECTED` | Medium | Count traced 2026-09-28 | Nygard 2011: without rationale, newcomers "Blindly accept" or "Blindly change it"; Chesterton's fence. **Count traced (2026-09-28, from the session logs):** the count began as an AI's tally on **one csa-zendesk branch in one review session (2026-09-21/22)**: "the lesson this branch has now paid for four times". It covered controls moved to the library seam, including an empty-upload refusal, the path-traversal guard, and int coercion of ids. Within about a day it drifted, as documents copied it, to "this fleet has paid for four separate times" and "this project has paid four separate times". The column now says "in a single day's work on one of these servers, we had to move a control into the library four separate times." The inflated wording remains in the internal platform docs and the csa-zendesk plan, still to be corrected. |
-| G3 | The article-production process itself is a useful meta-example of preserving decisions, rejected paths, and rationale | `KURT` | Low | See note | The packet's own CognitiveBOM has no expected-outcome field, the same gap as ADRs (see `11-source-sweep.md` §7) |
+| G3 | The article-production process itself is a useful meta-example of preserving decisions, rejected paths, and rationale | `KURT` | Low | See note | The packet's own CognitiveBOM has no expected-outcome field, the same gap as ADRs (see `11-source-sweep.md` §7) **Superseded 2026-09-27:** CognitiveBOM entries now carry expected outcomes and check-by dates (C15 onward). |
 
 ## H. Prior art: who went first (new, from sweep 2)
 
@@ -119,7 +119,17 @@ This is the working knowledge bill of materials for the article and a possible L
 | I5 | Regulation mandates what-logs (EU AI Act Art. 12; ISO 42001 A.6.2.8). The only per-decision why is EU Art. 86's explanation on request. NIST AI RMF has intended-vs-actual only at system level. | `VERIFIED` + `SECONDARY` | Medium | ISO text and Digital Omnibus dates are secondary only |
 | I6 | In agent security, "intent" means an authorization claim (intent capsules, intent-bound tokens, IETF Intent Admission, CSA ORCHIDEAS), checked at the gate but not later compared with outcomes | `VERIFIED` | Medium | OWASP Agentic Top 10 2026; IETF draft-jiang-oauth-intent-admission; CSA blog Jun 2026 |
 | I7 | Giving agents intent files (AGENTS.md style) does not generally improve task success, and it raises cost 20%+ | `VERIFIED-ABSTRACT` | Medium | ETH, arXiv:2602.11988. The loop, not the intent document, has to carry the value. |
-| I8 | No source found proposes that an agent record its own expected outcome at decision time, to be scored later against the actual outcome | `MINE` (negative search) | Yes | Sweep 3 §7. This is absence of evidence, not proof. It is the column's sharpest distinct claim. |
+| I8 | No source found proposes that an agent record its own expected outcome at decision time, to be scored later against the actual outcome | `MINE` (negative search) | Yes | Sweep 3 §7. This is absence of evidence, not proof. It is the column's sharpest distinct claim. **Scoped 2026-09-29 (external review):** a *dated* negative search (2026-09-24) covering standards, security frameworks, regulations and vendor tools. Research has proposed the broad mechanism: see I9. The column now says so. |
+
+## I (cont.). Added by the 2026-09-29 external review
+
+| ID | Claim | Status | Load-bearing | Source / note |
+|---|---|---|---|---|
+| I9 | Research has proposed agents that compare predicted with observed outcomes and update their causal model on the mismatch | `VERIFIED-ABSTRACT` | Low | Aryan & Liu, *Causal Reflection with Language Models*, arXiv:2508.04495 (Aug 2025, rev. Sep 2025). A framework paper with no implementation or empirical evaluation. It is adjacent prior art: it does not establish organizational practice, a standard, or measured improvement |
+
+**Standing rule (2026-09-29):** a source existing is not the same as the claim being supported.
+Record separately the status of the source, the part actually read, and the inference drawn.
+Negative searches keep their date and scope.
 
 ## J. Rationale-capture design evidence (new, from sweep 4)
 
@@ -128,7 +138,7 @@ This is the working knowledge bill of materials for the article and a possible L
 | J1 | Outcome knowledge silently inflates what people think they expected, so expectations must be recorded before the outcome | `VERIFIED` | Yes | Fischhoff 1975; Nosek et al. 2018 (prediction vs postdiction) |
 | J2 | When claims were fixed before results were known, positive results dropped from 96% to 44% | `VERIFIED-ABSTRACT` | Medium | Scheel, Schijen & Lakens 2021 (registered reports) |
 | J3 | Justifying after committing produces defensive bolstering; pre-decision process accountability to an audience with unknown views improves judgment and calibration | `VERIFIED` | Yes | Lerner & Tetlock 1999 |
-| J4 | Optimizing against a rationale channel drives it dark: CoT monitor recall "falls to near zero" | `VERIFIED` | Yes | Baker et al. (OpenAI) 2025; Haskins et al. 2026 |
+| J4 | Optimizing against a rationale channel drives it dark: CoT monitor recall "falls to near zero" | `VERIFIED` | Yes | Baker et al. (OpenAI) 2025; Haskins et al. 2026 **Scope (2026-09-29, external review):** supports not making the reasoning channel an optimization target (don't *reward* reasoning). It does **not** support a ban on *reviewing* reasoning. The column's rule was corrected accordingly. |
 | J5 | Mandatory free-text reasons degrade into noise (spaces, random characters, top-of-list picks), but aggregated they still expose broken processes (malfunctions in 26% of alert rules) | `VERIFIED` + `VERIFIED-ABSTRACT` | Medium | Wright et al., JAMIA 2019; Aaron et al., JAMIA 2019 |
 | J6 | Rationale fields can leak sensitive data ("sometimes even passwords") | `VERIFIED` | Low | Wright et al. 2019. This is a security-audience point. |
 
