@@ -71,15 +71,19 @@ The H1/H2 reachability experiment (public; `csa-zendesk/experiments/`) worked li
   reads 'not reachable' and deletes the handling."** This is Chesterton's fence in Kurt's own words.
 - **H1 result:** "leaked exactly as predicted." That is a prediction confirmed. It was on record first: the pinned known-gap test (`test_white_on_white_is_a_KNOWN_GAP_and_still_leaks`) was committed on 2026-09-22, and the live run was on 2026-09-24.
 - **The key part:** *"the interesting part is why it leaked, because it is not the reason H1
-  records."* The recorded reason said *can't detect*. The truth was *deliberately chose not to*,
-  because a naive colour rule produced 82.6% of all hidden-text detections (6,875 of 8,327
-  elements in a 90-day, 5,215-ticket corpus), overwhelmingly white text on dark email headers, which
-  is ordinary design. Keeping the rule flags 23.2% of tickets; dropping it, 5.5%. The figure is
-  already published in the public experiment write-up (`RESULTS.md`). The underlying corpus study is
-  internal and derived from CSA's own ticket data, so **cite the public write-up, not the study.**
-  **Precision:** it is a *share of detections*, not a measured false-positive rate. "False positive"
-  is an inference, because the corpus showed no hidden-text attacks. Say "82.6% of what the rule
-  flagged was ordinary email design", not "82.6% false positives." 
+  records."* Both things were true. The converter cannot *reliably* tell whether white text is
+  concealed, because that depends on the background of an ancestor element. **And** the simple
+  colour rule that would have caught this sentinel was left out deliberately, because it produced
+  82.6% of all hidden-text detections, overwhelmingly white text on dark email headers, which is
+  ordinary design. What the record omitted was the trade-off. (Refined 2026-09-28 on the external
+  review's point: the earlier wording here, "recorded *can't*, truth *chose not to*", was a
+  cleaner opposition than the evidence supports.)
+  - The 82.6% figure is published in the public experiment write-up (`RESULTS.md`), which is the
+    source to cite. The underlying corpus study is internal and derived from CSA's own ticket
+    data, and its other figures are not public.
+  - **Precision:** 82.6% is a *share of detections*, not a measured false-positive rate. "False
+    positive" is an inference, because the corpus showed no hidden-text attacks. Say "82.6% of
+    what the rule flagged was ordinary email design", not "82.6% false positives."
   - *"'not detected' reads like a capability gap when it is a false-positive trade."*
 
 **Why this matters for Beat 8 (rationale is not truth):**
@@ -152,6 +156,8 @@ Everything above is public-safe as written:
   - an internal automation incident;
   - internal system figures;
   - pointers to private repositories.
+
+**Correction (2026-09-29):** an earlier version of this file, exported publicly on 2026-09-28, included further figures from the internal corpus study: ticket counts, element counts, and flag rates. That broke the rule above. They were removed on 2026-09-29, after an external AI review caught them. See the public corrections record.
 
 **When drafting:** keep vendor facts (Zendesk behaviour) and drop any tenant-specific detail. That
 is the rule the MCP repos themselves use: *"Facts about the vendor are public. Facts about this
