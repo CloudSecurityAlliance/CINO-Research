@@ -439,6 +439,20 @@ The first-person material now comes from the public MCP server work (`14-mcp-cas
 **Expected outcome:** by the 2026-11-15 scoring date, the repo exists with at least the column's own predictions scored, and the plugin is at least designed. Standardizing the ladder is decided after 2-3 pieces, not before.
 **Check by:** 2026-11-15.
 
+## C21 - draft-03: cut the Karvetski sentence; correct the four-times count
+
+**Origin:** Kurt's read of draft-02, 2026-09-28
+**Disposition:** `completed`
+
+- **The Karvetski result is cut from the column** (Kurt: option A). It measures reasoning *text* to predict accuracy, which is not the column's loop of writing down the expected outcome and scoring it against what happened. Next to Beat 8's "never grade the reasoning itself" it read as a contradiction, and only its abstract had been verified. It stays in the source sweep and KnowledgeBOM H5.
+- **The four-times sentence is corrected** to its traced scope: one day, one server (KnowledgeBOM G2).
+
+**Rejected alternatives:**
+- Keep Karvetski with a "measured, not rewarded" clause. Accurate, but it adds words to the densest paragraph.
+- Attribute "four times" to the four MCP servers (Kurt's first hypothesis). The logs show it began as a same-branch tally.
+
+**Expected outcome:** no reader flags an internal contradiction between Beats 5 and 8. **Check by:** 2026-11-15, against reader feedback.
+
 ## Decisions against ledger
 
 | Rejected idea | Disposition | Reason |
