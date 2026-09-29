@@ -3,8 +3,8 @@ title: Why Is Telemetry
 type: column-research
 status: active
 started: 2026-09-24
-last_reviewed: 2026-09-28
-column: Circle News, September 2026 (Kurt Seifried, CSA); final text in review
+last_reviewed: 2026-09-29
+column: Circle News column 91, "Why Is Telemetry" (Kurt Seifried, CSA), sent to publication 2026-09-29
 plugin: planned (csa-plugins-official)
 next_check: 2026-11-15
 source: exported from CSA's internal writing workspace (Circle News research packet); experiment-log.md and TEMPLATE.md are originals here
@@ -80,7 +80,7 @@ source checks or by an adversarial review from a second AI before publication.
 
 ## Status
 
-- **The column** is written and in final review.
+- **The column** was sent to publication on 2026-09-29, as Circle News column 91.
 - **The public repo and experiment log** started on 2026-09-28. The template now separates the
   **hoped** outcome from the **expected** one.
 - **The plugin** (decision records with expected outcomes, plus a scoring command) is planned.
