@@ -474,6 +474,32 @@ The first-person material now comes from the public MCP server work (`14-mcp-cas
 
 **Expected outcome:** readers can state the difference between a hope and an expectation after one read. At least one template user fills in both fields with different values. **Check by:** 2026-11-15.
 
+## C23 - draft-06: tighten by 12%
+
+**Origin:** Kurt asked for a 10-20% cut and left the choice to Claude, 2026-09-28
+**Disposition:** `completed`
+
+**Cut (1,864 to 1,634 words):**
+- the Nygard sentence and the column-87 callback;
+- the David setup sentence;
+- the Levitt & March quote and the Python "Rejected Ideas" example;
+- the choice-blindness / 25-39% sentence and its citation (the H1 story already shows a written reason turning out wrong);
+- the hope/expectation "distance is the risk" parenthetical (it stays in `TEMPLATE.md`);
+- the researcher affiliations and the long survey caveat.
+
+**Merged:** the economics and "resurfaced" paragraphs. The "resurfaced with AI" framing stays (C15).
+
+**Kept deliberately:**
+- the column-89 bridge;
+- the opening;
+- the H1 pair;
+- the Army and forecasting precedents;
+- the close and all protected lines.
+
+**Rejected alternative:** cutting to ~1,520 by also dropping the column-89 bridge. Continuity for regular readers is worth 40 words.
+
+**Expected outcome:** Kurt's read finds it tighter without losing an argument he wanted. No cut material is asked back. **Check by:** Kurt's read of `draft-06`.
+
 ## Decisions against ledger
 
 | Rejected idea | Disposition | Reason |
