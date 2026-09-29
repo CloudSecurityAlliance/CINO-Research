@@ -60,6 +60,21 @@ not published here. Where the BOMs cite a numbered file that isn't in this folde
 
 Corrections are logged in the KnowledgeBOM, not silently fixed.
 
+## Corrections
+
+We log corrections here instead of quietly editing them away. The column argues that written
+reasons are claims to be tested, and these are ours being tested. Most were caught by our own
+source checks or by an adversarial review from a second AI before publication.
+
+| Date | What was wrong | How it was found | What changed |
+|---|---|---|---|
+| 2026-09-24 | Workslop was quoted as 41%. The survey's own figure is 40% (41% appears only in a summary blurb) | Source sweep | Corrected in the KnowledgeBOM (C4) |
+| 2026-09-24 | Paul David's "before" state was described as central electric drive. It was *group drive* | Source sweep | Corrected (B2) |
+| 2026-09-24 | A cited paper was listed as arXiv. It is a Preprints.org preprint, not peer reviewed | Source sweep | Corrected (E3) |
+| 2026-09-28 | "Paid for that lesson four separate times" had grown in the retelling, from one branch in one day to "the fleet" | Tracing the claim through the session logs | The column now says one day's work on one server (G2) |
+| 2026-09-28 | A study that scored the *text* of reasoning was cited in a way that contradicted the column's own rule about grading reasoning | The author's read | Cut from the column (H5) |
+| 2026-09-29 | **An export on 2026-09-28 included internal support-ticket figures from our corpus study** (ticket counts, element counts, flag rates), against this repo's own public-safety rule. It contained no credentials and no personal data | Adversarial review by a second AI | Removed from [`14-mcp-case-material.md`](14-mcp-case-material.md) on 2026-09-29. **They remain in this repo's git history.** We chose not to rewrite that history, because the history is what shows when our predictions were made. |
+
 ## Status
 
 - **The column** is written and in final review.
