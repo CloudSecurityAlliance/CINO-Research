@@ -37,8 +37,10 @@ practice cheap enough to keep doing.
 
 **Revisit if:** What would make this decision stop being right?
 
-**Expected outcome:** What we expect to happen because of this decision. Write it so it could turn
-out wrong: a prediction that can't fail isn't a prediction.
+**Hoped outcome:** What we want to happen. This is the goal.
+**Expected outcome:** What we actually expect to happen because of this decision. This is the
+prediction, and it is often not the same as the hope. Write it so it could turn out wrong: a
+prediction that can't fail isn't a prediction.
 **Confidence:** How sure are we? A probability is best, e.g. 70%.
 **Check by:** YYYY-MM-DD
 
@@ -46,22 +48,26 @@ out wrong: a prediction that can't fail isn't a prediction.
 **Actual outcome:**
 **Scored on:** YYYY-MM-DD
 **What we learned:** Was the reasoning right, or were we right (or wrong) for a different reason?
+How did the outcome compare with the hope, and with the expectation?
 ```
 
 ## Rules that make it work
 
 The evidence behind each rule is in [`KnowledgeBOM.md`](KnowledgeBOM.md), sections A6 and J.
 
-1. **Write the expected outcome before you know the result.** Hindsight quietly rewrites what we
+1. **Keep the hope and the expectation separate.** Plans are full of hopes. Scoring a hope against
+   the outcome tells you whether you got what you wanted. Scoring the expectation tells you whether
+   your judgment was any good. The distance between the two is the risk you knowingly took.
+2. **Write the expected outcome before you know the result.** Hindsight quietly rewrites what we
    think we expected, and we can't tell it's happening.
-2. **Never edit the prediction after the outcome.** Add the result below it. Keep the wrong ones,
+3. **Never edit the prediction after the outcome.** Add the result below it. Keep the wrong ones,
    because they are where the learning is.
-3. **Score against what actually happened**, not against how convincing the reasoning reads. A
+4. **Score against what actually happened**, not against how convincing the reasoning reads. A
    well-written wrong reason and a well-written right one look the same on the page.
-4. **Never grade the reasoning itself.** Reward good-looking rationale and you get good-looking
+5. **Never grade the reasoning itself.** Reward good-looking rationale and you get good-looking
    rationale, not better decisions. That holds for people and for AI models.
-5. **Treat the record as sensitive.** Free-text reasons have leaked personal data and even passwords.
-6. **Check on the date.** A record nobody revisits is only documentation.
+6. **Treat the record as sensitive.** Free-text reasons have leaked personal data and even passwords.
+7. **Check on the date.** A record nobody revisits is only documentation.
 
 ## Asking an AI to write one
 
@@ -69,8 +75,8 @@ When an AI agent is about to make a decision that passes the three-question gate
 instructions:
 
 > Before acting, write a decision record using the template above: context, decision, why,
-> rejected alternatives, and **an expected outcome that could turn out wrong, a confidence, and a
-> check-by date**. Write it before you see the result. Do not revise the expected outcome after the
+> rejected alternatives, the hoped outcome, and **an expected outcome that could turn out wrong, a
+> confidence, and a check-by date**. Keep the hope and the expectation separate. Write it before you see the result. Do not revise the expected outcome after the
 > result is known; record the actual outcome separately.
 
 A plugin that does this, and that finds records whose check-by date has passed, is planned for
