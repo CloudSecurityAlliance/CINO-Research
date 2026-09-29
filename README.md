@@ -19,7 +19,7 @@ can actually do.
 
 | Topic | Type | Status | Column | Plugin | Next check |
 |---|---|---|---|---|---|
-| [why-is-telemetry](why-is-telemetry/) | column-research | active | Circle News, September 2026 | planned | 2026-11-15 |
+| [why-is-telemetry](why-is-telemetry/) | column-research | active | Circle News 91 (Sep 2026) | planned | 2026-11-15 |
 
 Each topic's `README.md` starts with YAML front matter holding the same fields, so this table can be
 checked against them.
