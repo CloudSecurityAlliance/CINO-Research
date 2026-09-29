@@ -34,3 +34,37 @@ edited.*
 
 This part could be scored the same day, so it proves little. It is logged because logging the easy
 ones too is the habit. E4(b) is still open.
+
+## Provenance note (appended 2026-09-29)
+
+An adversarial review pointed out that the claim at the top of this file ("the git history of this
+file shows when each prediction was written") is not true for E1-E5.
+
+- **E1-E5 were imported.** They were first recorded in the column's private decision ledger (the
+  working CognitiveBOM) between 2026-09-24 and 2026-09-28, on the dates in the "Recorded" column.
+  They were copied here when this repository was created on 2026-09-28. For these five, this file's
+  history shows when they were *published*, not when they were first *written*.
+- **E4(a) was already scored when it was imported.** Its expectation was committed privately 13
+  minutes before the first draft was committed (2026-09-27, 19:57 and 20:10, UTC-6). That private
+  record is not public, so treat the timing as our statement, not as something you can verify
+  here.
+- **From E6 on, every prediction is committed to this file before its outcome is known.** Only
+  those entries carry the git-history evidence the header describes.
+
+## Resolution rules (appended 2026-09-29)
+
+Each existing entry, with who resolves it and what counts. The rules were added after the fact, so
+they are labeled as such. The predictions above are unchanged.
+
+| ID | Who resolves | Met if | Not met if | If there is no evidence by the check date |
+|---|---|---|---|---|
+| E1 | Kurt | At least one unsolicited reader response describes the column as a new contribution, and none describe it as a restatement of others' work | Any response describes it as a restatement | **Unresolved**, recorded as such, not as "met" |
+| E2 | Kurt | A reader of earlier columns mentions continuity or a series arc, and none mention repetition | A reader mentions repetition | **Unresolved** |
+| E3 | Kurt's explicit call | Kurt judges that the swap cost the column nothing | Kurt judges that it cost something | Pending Kurt |
+| E4(b) | Kurt's explicit call | No beat felt like a rerun of the previous three columns | One did | Pending Kurt |
+| E5 | Objective | This repository exists, the column's own predictions due by the check date are scored, and a plugin design exists | Any of the three is missing | Not met |
+
+**What these entries do not test.** None of E1-E5 tests the column's actual thesis: that recording
+and reviewing expectations improves later work. A future entry will: compare comparable work done
+with and without access to earlier decision records, with the measures defined in advance. It is
+allowed to fail.

@@ -30,6 +30,7 @@ reasoning isn't enough. The expected outcome is what makes it something you can 
 | How the thinking changed, with decisions and rejected paths | [`CognitiveBOM.md`](CognitiveBOM.md) |
 | The source sweep: what held up, what was corrected, who else is working on this | [`11-source-sweep.md`](11-source-sweep.md), with raw evidence in [`sources/`](sources/) |
 | The first-person case (CSA's MCP server work) | [`14-mcp-case-material.md`](14-mcp-case-material.md) |
+| What an adversarial review found, and what we did | [`review-2026-09-28.md`](review-2026-09-28.md) |
 
 ## What's here, and what isn't
 
@@ -74,6 +75,8 @@ source checks or by an adversarial review from a second AI before publication.
 | 2026-09-28 | "Paid for that lesson four separate times" had grown in the retelling, from one branch in one day to "the fleet" | Tracing the claim through the session logs | The column now says one day's work on one server (G2) |
 | 2026-09-28 | A study that scored the *text* of reasoning was cited in a way that contradicted the column's own rule about grading reasoning | The author's read | Cut from the column (H5) |
 | 2026-09-29 | **An export on 2026-09-28 included internal support-ticket figures from our corpus study** (ticket counts, element counts, flag rates), against this repo's own public-safety rule. It contained no credentials and no personal data | Adversarial review by a second AI | Removed from [`14-mcp-case-material.md`](14-mcp-case-material.md) on 2026-09-29. **They remain in this repo's git history.** We chose not to rewrite that history, because the history is what shows when our predictions were made. |
+| 2026-09-29 | The column overclaimed in places: that one outcome shows whether judgment was good; that reasoning should never be graded; that a recorded reason was *wrong* when it was *incomplete*; and it treated a plan (the Army's review) as a forecast | [Adversarial review](review-2026-09-28.md) | Corrected in the column before publication; the template's rule corrected too |
+| 2026-09-29 | The experiment log claimed its git history proves when every prediction was written. E1-E5 were imported from a private ledger | [Adversarial review](review-2026-09-28.md) | Provenance note and resolution rules appended to [`experiment-log.md`](experiment-log.md) |
 
 ## Status
 
