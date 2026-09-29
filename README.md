@@ -35,6 +35,22 @@ checked against them.
   when they come due. Wrong predictions are kept. The git history shows each prediction was written
   before its outcome.
 
+## Ecosystem
+
+- **Provides:** public, checkable research behind CINO work: claim ledgers (KnowledgeBOM),
+  decision ledgers (CognitiveBOM), append-only scored predictions, and reusable templates.
+- **Depends on:** CSA's internal CINO writing and engineering workspaces, where the working
+  research is done. Topics are exported from there at milestones. Experiment logs and templates
+  are original here.
+- **Enables:** plugins in
+  [csa-plugins-official](https://github.com/CloudSecurityAlliance/csa-plugins-official) that turn a
+  topic's practice into something people can install (planned for `why-is-telemetry`).
+- **Feeds into:** CSA Circle News columns, reports, and Labs material, which link here for their
+  evidence.
+- **Related:** CSA's public MCP servers, e.g.
+  [csa-zendesk](https://github.com/CloudSecurityAlliance/csa-zendesk), whose experiments are cited
+  as first-person evidence.
+
 ## Licence
 
 Content is licensed under [CC BY 4.0](LICENSE). Share and adapt it, with attribution to the Cloud
