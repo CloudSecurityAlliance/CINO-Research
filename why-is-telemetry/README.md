@@ -4,7 +4,7 @@ type: column-research
 status: active
 started: 2026-09-24
 last_reviewed: 2026-09-28
-column: Circle News, September 2026 (Kurt Seifried, CSA)
+column: Circle News, September 2026 (Kurt Seifried, CSA); final text in review
 plugin: planned (csa-plugins-official)
 next_check: 2026-11-15
 source: exported from CSA's internal writing workspace (Circle News research packet); experiment-log.md and TEMPLATE.md are originals here
@@ -44,9 +44,26 @@ The column's working papers (research sequence, design notes, drafts, and the nu
 BOMs sometimes refer to, such as `04` or `10`) live in CSA's internal writing workspace and are
 not published here. Where the BOMs cite a numbered file that isn't in this folder, that is why.
 
+## What the column cites, and where it's backed
+
+| Column claim | Source | KnowledgeBOM |
+|---|---|---|
+| A firm's information structures are the modern factory layout, and they never wear out | Paul David, 1990, p. 360 | B2 |
+| Workslop: 40% of 1,150 US desk workers received it in the past month; nearly two hours per instance (self-reported) | HBR, Sep 2025 | C3, C4 |
+| Capturing rationale costs the recorder now and benefits someone else later | Grudin, 1996 | H1 |
+| Context files handed to coding agents didn't generally improve task success, and cost 20%+ more | arXiv 2602.11988 | I7 |
+| A recorded prediction checked against real email: the white text got through, as predicted, but for a different reason than the one written down | [csa-zendesk experiment](https://github.com/CloudSecurityAlliance/csa-zendesk/tree/main/experiments/2026-09-24-h1-h2-reachability) | [`14`](14-mcp-case-material.md) §3 |
+| Training a model against a monitor that reads its reasoning drives the monitor's recall to near zero | Baker et al. (OpenAI), 2025 | J4 |
+| The Army's after-action review; forecasting tournaments | TC 25-20; Mellers et al. 2014 | H4, A4 |
+| No standard, framework or tool found that records an AI agent's own expected outcome | negative search, 2026-09-24 | I8 |
+| Four control moves in one day's work on one server | session logs, traced 2026-09-28 | G2 |
+
+Corrections are logged in the KnowledgeBOM, not silently fixed.
+
 ## Status
 
-- The column is written.
-- The public repo and experiment log started on 2026-09-28.
-- The plugin (decision records with expected outcomes, plus a scoring command) is planned.
-- The first scoring date is 2026-11-15.
+- **The column** is written and in final review.
+- **The public repo and experiment log** started on 2026-09-28. The template now separates the
+  **hoped** outcome from the **expected** one.
+- **The plugin** (decision records with expected outcomes, plus a scoring command) is planned.
+- **The first scoring date** is 2026-11-15.

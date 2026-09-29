@@ -500,6 +500,21 @@ The first-person material now comes from the public MCP server work (`14-mcp-cas
 
 **Expected outcome:** Kurt's read finds it tighter without losing an argument he wanted. No cut material is asked back. **Check by:** Kurt's read of `draft-06`.
 
+## C24 - draft-06 is the final candidate, pending another AI's review
+
+**Origin:** Kurt, 2026-09-28 ("let's assume we're going with draft 6, pending review by another AI")
+**Disposition:** `completed`
+
+**Decision:** `draft-06.md` goes forward, with one safety fix: the repo link was moved into
+parentheses so a trailing comma can't break it in newsletter tools. An external AI review comes
+next, using the brief in `05-delivery.md`. The brief asks for correctness, consistency, audience and
+style, and lists the recorded decisions not to reopen.
+
+**Rejected alternative:** further cuts toward ~1,520 words. See C23.
+
+**Expected outcome:** the external review finds no factual error that needs a structural change;
+fixes, if any, are sentence-level. **Check by:** when the external review comes back.
+
 ## Decisions against ledger
 
 | Rejected idea | Disposition | Reason |
